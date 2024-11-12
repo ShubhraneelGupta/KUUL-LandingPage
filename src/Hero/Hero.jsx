@@ -47,7 +47,7 @@ const Hero = () => {
             transition={{
                 delay:2
             }}
-        >Join Us</motion.button>
+        >Join the Waitlist</motion.button>
     </div>
 }
 
