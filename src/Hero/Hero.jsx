@@ -1,13 +1,21 @@
 import {motion} from "framer-motion"
+import {useState} from "react"
 import './Hero.scss'
 import logo from '../assets/KC.svg'
 
 
 const Hero = () => {
+
+
     return <div className="wrapper">
         <div className="logo">
             <img src={logo} alt="KC Icon" />
         </div>
+
+        {/* <div className="info">
+            Under-dev
+        </div> */}
+        
         <div className="heading">
             <span className="accent-two">K</span><span className="accent-one">UUL</span>
             <span className="dot accent-one">.</span>
