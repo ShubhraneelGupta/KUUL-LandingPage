@@ -56,32 +56,9 @@
         font-family: monospace;
     }
 
-    .button-join {
-        margin-top: 3rem;
-        font-size: 1.5rem;
+    .message{
+        color: white;
         font-family: monospace;
-        padding: 13px 20px 13px;
-        outline: 0;
-        border: 5px solid white;
-        cursor: pointer;
-        position: relative;
-        background-color: rgba(0, 0, 0, 0);
-
-        &:after {
-            content: "";
-            background-color: yellowgreen;
-            width: 100%;
-            z-index: -1;
-            position: absolute;
-            height: 100%;
-            top: 12px;
-            left: 12px;
-            transition: 0.2s;
-          }
-          
-          &:hover:after {
-            top: 0px;
-            left: 0px;
-          }
-      }
+        margin-top: 1rem;
+    }
 }

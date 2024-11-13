@@ -2,9 +2,11 @@ import {motion} from "framer-motion"
 import {useState} from "react"
 import './Hero.scss'
 import logo from '../assets/KC.svg'
-
+import Waitlist from '../Waitlist/Waitlist'
 
 const Hero = () => {
+
+    console.log()
     return <div className="wrapper">
         <div className="logo">
             <img src={logo} alt="KC Icon" />
@@ -39,13 +41,7 @@ const Hero = () => {
                 Connecting communities through events
         </motion.div>
         
-        <motion.button className="button-join" 
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{
-                delay:2
-            }}
-        >Join the Waitlist</motion.button>
+        <Waitlist/>
     </div>
 }
 

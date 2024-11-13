@@ -1,0 +1,63 @@
+.wishlist-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-top: 7.5rem;
+    padding: 2.5rem;
+
+    .button-join {
+        font-size: 1.5rem;
+        font-family: monospace;
+        padding: 13px 20px 13px;
+        outline: 0;
+        border: 5px solid white;
+        cursor: pointer;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0);
+    
+        &:after {
+            content: "";
+            background-color: yellowgreen;
+            width: 100%;
+            z-index: -1;
+            position: absolute;
+            height: 100%;
+            top: 12px;
+            left: 12px;
+            transition: 0.2s;
+          }
+          
+          &:hover:after {
+            top: 0px;
+            left: 0px;
+          }
+      }
+    
+    
+      .email{
+            color: #fff;
+            font-size: 1.5rem;
+            background-color: transparent;
+            width: 65%;
+            box-sizing: border-box;
+            padding-inline: 0.5em;
+            padding-block: 0.7em;
+            border: none;
+            border-bottom: 2px solid white;
+    
+            &:hover {
+                background-color: white;
+                color: black;
+             }
+            &:focus {
+              outline: none;
+              background-color: white;
+                color: black;
+                border-bottom: yellowgreen;
+             }
+            &:focus ~ .input-border {
+              width: 100%;
+             }
+      }
+}
