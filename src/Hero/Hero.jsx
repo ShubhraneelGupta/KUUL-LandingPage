@@ -5,8 +5,6 @@ import logo from '../assets/KC.svg'
 
 
 const Hero = () => {
-
-    console.log(import.meta.env.VITE_PUBLIC_KEY)
     return <div className="wrapper">
         <div className="logo">
             <img src={logo} alt="KC Icon" />
