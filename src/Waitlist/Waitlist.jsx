@@ -38,7 +38,7 @@ const Waitlist = () => {
     }
   };
 
-  return (
+  return (<>
     <div className="wishlist-wrapper">
       <motion.input
         required
@@ -60,13 +60,13 @@ const Waitlist = () => {
       >
         {isLoading ? "Joining..." : "Join Waitlist"}
       </motion.button>
-
+    </div>
       {message && (
         <div className="message">
           {message}
         </div>
       )}
-    </div>
+    </>
   );
 };
 

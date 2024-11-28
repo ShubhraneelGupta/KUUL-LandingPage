@@ -1,3 +1,10 @@
+$heading-size-one: 15rem;
+$heading-size-two: 7rem;
+$heading-size-three: 2.0rem;
+$heading-size-four: 1.5rem;
+
+$font-size-one: 1.5rem;
+$font-size-two: 0.85rem;
 
 .accent-one{
     color: white;
@@ -16,13 +23,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    width: 100vw;
+    height: 100dvh;
+    width: 100dvw;
     backdrop-filter: blur(40px);
 
     .info{
         color: white;
-        font-size: 1.5rem;
+        font-size: $font-size-one;
         font-family: monospace;
         writing-mode: vertical-rl;
         position: fixed;
@@ -39,18 +46,18 @@
     }
 
     .heading{
-        font-size: 10rem;
+        font-size: $heading-size-one;
         font-family: monospace;
     }
 
     .heading-two{
-        font-size: 2.5rem;
-        margin-top: 3.5vh;
+        font-size: $heading-size-three;
+
         font-family: monospace
     }
 
     .heading-three{
-        font-size: 1.5rem;
+        font-size: $heading-size-four;
         display: flex;
         justify-content: center;
         font-family: monospace;
@@ -60,5 +67,27 @@
         color: white;
         font-family: monospace;
         margin-top: 1rem;
+    }
+}
+
+@media (max-width: 1250px){
+    .wrapper{
+        .heading{
+            font-size: $heading-size-two;
+        }
+        .heading-two, .heading-three{
+            font-size: $font-size-two;
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .wrapper{
+        .heading{
+            font-size: 4.5rem;
+        }
+        .heading-two, .heading-three{
+            font-size: $font-size-two;
+        }
     }
 }

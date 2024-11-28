@@ -1,15 +1,23 @@
+$padding-one: 1.5rem;
+$padding-two: 1rem;
+
+$font-size-one: 1.5rem;
+$font-size-two: 1rem;
+$font-size-three: 0.75rem;
+
 .wishlist-wrapper {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    width: 50%;
+    width: 40%;
     margin-top: 7.5rem;
-    padding: 2.5rem;
+    padding: $padding-one;
 
     .button-join {
-        font-size: 1.5rem;
+        min-width: 25%;
+        width: fit-content;
+        font-size: $font-size-one;
         font-family: monospace;
-        padding: 13px 20px 13px;
+        padding: 1rem 1rem;
         outline: 0;
         border: 5px solid white;
         cursor: pointer;
@@ -37,15 +45,15 @@
     
       .email{
             color: #fff;
-            font-size: 1.5rem;
+            font-size: $font-size-one;
             background-color: transparent;
-            width: 65%;
+            width: 55%;
             box-sizing: border-box;
-            padding-inline: 0.5em;
-            padding-block: 0.7em;
             border: none;
             border-bottom: 2px solid white;
-    
+            padding: 0 0.5rem;
+            font-family: monospace;
+
             &:hover {
                 background-color: white;
                 color: black;
@@ -60,4 +68,46 @@
               width: 100%;
              }
       }
+}
+
+
+@media (max-width: 1400px){
+  .wishlist-wrapper{
+    padding: $padding-two;
+    margin-top: 3rem;
+    .button-join{
+      font-size: $font-size-two;
+    }
+
+    .email{
+      font-size: $font-size-two;
+    }
+  }
+}
+
+@media (max-width: 1000px){
+  .wishlist-wrapper{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+
+    .email{
+      padding: $padding-two;
+      margin-bottom: $padding-two;
+    }
+  }
+}
+
+@media (max-width: 600px){
+  .wishlist-wrapper{
+    .email{
+      font-size: 0.75rem;
+    }
+
+    .button-join{
+      font-size: 0.75rem;
+    }
+  }
 }
